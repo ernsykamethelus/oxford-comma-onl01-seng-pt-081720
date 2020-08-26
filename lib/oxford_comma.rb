@@ -1,15 +1,17 @@
 def oxford_comma(array)
-  if array.size == 1
-    array.join (" ")
-  elsif array.size == 2
-    array.join (" and ")
-  else array.size >= 3
+  array = [*array]
+  case array.size
+  when 0
+    ''
+  when 1
+    array[0].to_s
+  when 2
+    array.join(' and ')
+  else
+    array_copy = array
     array_copy[-1] = "and #{array_copy[-1]}"
     array_copy.join(', ')
-    long_array = array.pop
-    array << long_array
-
-end
+  end
 end
 
 #if my array has one element
