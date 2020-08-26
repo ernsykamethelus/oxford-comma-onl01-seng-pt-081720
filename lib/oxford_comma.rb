@@ -1,9 +1,9 @@
 def oxford_comma(array)
-  if array.size == 1
+  if array.size.to_s == 1
     array.join (" ")
-  elsif array.size == 2
+  elsif array.size.to_s == 2
     array.join (" and ")
-  else array.size >= 3
+  else array.size.to_s >= 3
     long_array = array.pop
     array << long_array
 
