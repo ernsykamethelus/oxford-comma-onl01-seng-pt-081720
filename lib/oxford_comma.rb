@@ -1,3 +1,3 @@
 def oxford_comma(array)
-array = ["fiddleheads","okra", "kohlrabi"].split
+array = ["fiddleheads","okra" and "kohlrabi"].split
 end
