@@ -1,9 +1,10 @@
 def oxford_comma(array)
   if array= "0"
   return array[0].to_s
-  if array= ["0","1"]
-  array[0..1].join(" and ")
-  array[0..1..3].join
+  elsif array= ["0","1"]
+  return array[0..1].join(" and ")
+else array= ["0","1","3"]
+  return array[0..1..3].join (",")
 end
 
 #if my array has one element
