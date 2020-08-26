@@ -1,6 +1,7 @@
 def oxford_comma(array)
   if array= "0"
-  array[0].to_s
+  return array[0].to_s
+  if array= ["0","1"]
   array[0..1].join(" and ")
   array[0..1..3].join
 end
